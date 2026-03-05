@@ -15,6 +15,33 @@ Het gebruikte model is **`adam`**, gebaseerd op **Llama 3 8B**, aangemaakt met e
 
 ---
 
+## Model installatie (Ollama)
+
+Volg deze stappen om het model lokaal te installeren en te gebruiken.
+
+### 1. Ollama installeren
+Zorg dat **Ollama** geïnstalleerd is op je systeem.  
+Installatie-instructies: https://ollama.com
+
+Controleer daarna of het werkt:
+
+```bash
+ollama --version
+```
+
+### 2. Het model lokaal installeren
+
+```bash
+ollama pull llama3:8b
+```
+
+### 3. Adam aanmaken
+Om Adam aan te maken is er een Modelfile nodig. Deze staat in de root van de git directory.
+
+```bash
+ollama create adam -f <Locatie van Modelfile> Modelfile
+```
+
 ## Starten
 
 ```bash
